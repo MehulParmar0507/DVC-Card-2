@@ -53,6 +53,7 @@ body{
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
+  padding-left: 12px;
 }
 
 
@@ -337,10 +338,96 @@ body{
     cursor: pointer;
   }
 
+/* Testimonial Container */
+#Testimonial-container
+{
+  /* border:2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+
+#Testimonial
+{
+   /* border:1px solid red; */
+   border-radius: 23px;
+   padding: 30px 50px;
+   background-color: aliceblue;
+}
+
+/* Product Section */
+
+#Product-Container
+{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#Product
+{
+  /* border:1px solid red; */
+}
+
+#Product .outerBox
+{
+   /* border: 1px solid green; */
+   display: flex;
+   justify-content: center;
+   gap: 45px;
+   margin-bottom: 45px;
+}
+
+#Product .outerBox .innerBox
+{
+   /* border: 2px solid black; */
+   background-color: aliceblue;
+   padding: 30px 30px;
+   border-radius: 23px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.innerBox img
+{
+   height: 250px;
+   /* width:258px; */
+   padding-left: 20px;
+   padding-bottom: 20px;
+}
+
+.innerBox h5
+{
+   font-weight: bolder;
+   font-size: 18px;
+   padding: 10px 0px 0px 0px;
+}
+
+.innerBox .prices
+{
+   margin-top: 30px;
+   font-family: Helvetica, sans-serif;
+}
+
+.innerBox .btn1
+{
+  background-color: rgb(187, 0, 0);
+  color: white;
+}
+
+.innerBox .btn2
+{
+  background-color: rgb(0, 189, 0);
+  padding: 7px 20px;
+  color: white;
+  margin-left: 35px;
+}
+
+
 /* Footer */
 footer
 {
-    padding-top: 0px;
+    padding-top: 50px;
     padding-bottom: 30px;
     font-size: 17px;
     text-align: center;
@@ -366,8 +453,23 @@ footer
      .gallery .photos img
     {
       width:80%;
-    }  
+    }
+    /* #Testimonial
+    {
+       width:300px;
+    } */
+  #Product .outerBox
+  {
+    flex-direction: column;
+    width:100%;
+  }
+  #Product .outerBox .innerBox
+  {
+     padding: 30px 50px;
+  }
 }
+
+
 
 @media all and (max-width:420px)
 {
